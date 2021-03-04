@@ -1,7 +1,7 @@
 # how-to-conditionally-enabled-or-disable-check-box-in-wpf-data-grid-Column
 How to conditionally enabled or disable CheckBox in WPF DataGrid (SfDataGrid) Column?
 
-By default, the CheckBox check state will be updated based on the content for that specified cell. To update check state based on other column value in the same record, IValueConverter can be implemented and the Convert() method can be implemented to have your own condition.
+By default, the CheckBox check state will be updated based on the content for that specified cell in [WPF DataGrid](https://www.syncfusion.com/wpf-ui-controls/datagrid) (SfDataGrid). To update check state based on other column value in the same record, IValueConverter can be implemented and the Convert() method can be implemented to have your own condition.
 
 ```C#
 public class ChangeState : IValueConverter
