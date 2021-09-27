@@ -29,3 +29,5 @@ To bind the converter for GridCells.
 <syncfusion:GridCheckBoxColumn CellStyle="{StaticResource cellStyle}" MappingName="Status" />
 ```
 ![CheckBox](CheckBox.png)
+
+KB article - [how-to-conditionally-enabled-or-disable-check-box-in-wpf-data-grid-Column](https://www.syncfusion.com/kb/11996/how-to-conditionally-enabled-or-disable-checkbox-in-wpf-datagrid-sfdatagrid-column)
