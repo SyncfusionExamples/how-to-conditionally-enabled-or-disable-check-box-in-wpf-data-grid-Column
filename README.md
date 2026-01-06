@@ -1,8 +1,8 @@
-# how-to-conditionally-enabled-or-disable-check-box-in-wpf-data-grid-Column
+# How to conditionally Enabled or Disable CheckBox in WPF DataGrid Column?
 
-This sample show cases how to conditionally enabled or disabled CheckBox in [WPF DataGrid](https://www.syncfusion.com/wpf-ui-controls/datagrid) (SfDataGrid) Column?
+This sample show cases how to conditionally enabled or disabled CheckBox in [WPF DataGrid](https://www.syncfusion.com/wpf-controls/datagrid) (SfDataGrid) Column.
 
-The CheckBox check state will be updated based on the content for that specified cell in [WPF DataGrid](https://www.syncfusion.com/wpf-ui-controls/datagrid) (SfDataGrid). To update check state based on other column value in the same record, `IValueConverter` can be implemented and the `Convert()` method can be implemented to have your own condition.
+The CheckBox check state will be updated based on the content for that specified cell in `DataGrid`. To update check state based on other column value in the same record, `IValueConverter` can be implemented and the `Convert` method can be implemented to have your own condition.
 
 ```C#
 public class ChangeState : IValueConverter
@@ -18,7 +18,8 @@ public class ChangeState : IValueConverter
 }
 ```
 To bind the converter for GridCells.
-```xaml
+
+```xml
 <Window.Resources>
     <local:ChangeState x:Key="converter" />
     <Style x:Key="cellStyle" TargetType="syncfusion:GridCell">
@@ -28,6 +29,5 @@ To bind the converter for GridCells.
 
 <syncfusion:GridCheckBoxColumn CellStyle="{StaticResource cellStyle}" MappingName="Status" />
 ```
-![CheckBox](CheckBox.png)
 
-KB article - [how-to-conditionally-enabled-or-disable-check-box-in-wpf-data-grid-Column](https://www.syncfusion.com/kb/11996/how-to-conditionally-enabled-or-disable-checkbox-in-wpf-datagrid-sfdatagrid-column)
+![Enable or disable the check box by condition](DataGridWithCheckBoxColumn.png)
